@@ -1,0 +1,74 @@
+<mvc:View controllerName="com.nttdata.tictactoe.controller.Main" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:grid="sap.ui.layout.cssgrid" xmlns:f="sap.f" xmlns:card="sap.f.cards">
+    <f:DynamicPage id="dynamicPageId" toggleHeaderOnTitleClick="false">
+        <f:content>
+            <Panel id="panelForGridList" class="mPanelClass">
+                <VBox id="_IDGenVBox1" class="VBoxClass">
+                    <f:GridList id="gridList" class="mGridList2">
+                        <f:GridListItem id="_IDGenGridListItem1">
+                            <Title id="_IDGenTitle1" text="Welcome! Do you wanna play a little game of NTT-DATA-toe? :)" class="mTitle" wrapping="true" />
+                        </f:GridListItem>
+                    </f:GridList>
+                    <f:GridList id="gridList2" class="mGridList2">
+                        <f:GridListItem id="_IDGenGridListItem3">
+                            <HBox id="_IDGenHBox1">
+                                <Button id="_IDGenButton1" text="{TNT>/0/text}" press="onPress" enabled="{TNT>/0/enabled}" type="{TNT>/0/type}" class="myButtons blueButton" />
+                                <Button id="_IDGenButton2" text="{TNT>/1/text}" press="onPress" enabled="{TNT>/1/enabled}" type="{TNT>/1/type}" class="myButtons blueButton" />
+                                <Button id="_IDGenButton3" text="{TNT>/2/text}" press="onPress" enabled="{TNT>/2/enabled}" type="{TNT>/2/type}" class="myButtons blueButton" />
+                                <!--<Text id="_IDGenText4" text="DATA" class="mTitle2" visible="{TNT>/DATAText/1}" />-->
+                                <Button id="_IDGenButton11" text="D" press="onPress"  type="{TNT>/0/type}" class="myButtons darkblueButton" visible="{TNT>/DATAText/1}" />
+                                <Button id="_IDGenButton12" text="A" press="onPress" type="{TNT>/1/type}"  class="myButtons darkblueButton" visible="{TNT>/DATAText/1}" />
+                                <Button id="_IDGenButton13" text="T" press="onPress" type="{TNT>/2/type}" class="myButtons darkblueButton" visible="{TNT>/DATAText/1}" />
+                                <Button id="_IDGenButton14" text="A" press="onPress" type="{TNT>/1/type}" class="myButtons darkblueButton" visible="{TNT>/DATAText/1}" />
+                            </HBox>
+                            <HBox id="_IDGenHBox2">
+                                <Button id="_IDGenButton4" text="{TNT>/3/text}" press="onPress" enabled="{TNT>/3/enabled}" type="{TNT>/3/type}" class="myButtons blueButton" />
+                                <Button id="_IDGenButton5" text="{TNT>/4/text}" press="onPress" enabled="{TNT>/4/enabled}" type="{TNT>/4/type}" class="myButtons blueButton" />
+                                <Button id="_IDGenButton6" text="{TNT>/5/text}" press="onPress" enabled="{TNT>/5/enabled}" type="{TNT>/5/type}" class="myButtons blueButton" />
+                                <!--<Text id="_IDGenText5" text="DATA" class="mTitle2" visible="{TNT>/DATAText/2}" />-->
+                                <Button id="_IDGenButton15" text="D" press="onPress" enabled="{TNT>/3/enabled}" type="{TNT>/0/type}" class="myButtons darkblueButton" visible="{TNT>/DATAText/2}" />
+                                <Button id="_IDGenButton16" text="A" press="onPress" enabled="{TNT>/3/enabled}" type="{TNT>/1/type}" class="myButtons darkblueButton" visible="{TNT>/DATAText/2}" />
+                                <Button id="_IDGenButton17" text="T" press="onPress" enabled="{TNT>/3/enabled}" type="{TNT>/2/type}" class="myButtons darkblueButton" visible="{TNT>/DATAText/2}" />
+                                <Button id="_IDGenButton18" text="A" press="onPress" enabled="{TNT>/3/enabled}" type="{TNT>/1/type}" class="myButtons darkblueButton" visible="{TNT>/DATAText/2}" />
+                            </HBox>
+                            <HBox id="_IDGenHBox3">
+                                <Button id="_IDGenButton7" text="{TNT>/6/text}" press="onPress" enabled="{TNT>/6/enabled}" type="{TNT>/6/type}" class="myButtons blueButton" />
+                                <Button id="_IDGenButton8" text="{TNT>/7/text}" press="onPress" enabled="{TNT>/7/enabled}" type="{TNT>/7/type}" class="myButtons blueButton" />
+                                <Button id="_IDGenButton9" text="{TNT>/8/text}" press="onPress" enabled="{TNT>/8/enabled}" type="{TNT>/8/type}" class="myButtons blueButton" />
+                                <!--<Text id="_IDGenText6" text="DATA" class="mTitle2" visible="{TNT>/DATAText/3}" />-->
+                                <Button id="_IDGenButton19" text="D" press="onPress" enabled="{TNT>/6/enabled}" type="{TNT>/0/type}" class="myButtons darkblueButton" visible="{TNT>/DATAText/3}" />
+                                <Button id="_IDGenButton20" text="A" press="onPress" enabled="{TNT>/6/enabled}" type="{TNT>/1/type}" class="myButtons darkblueButton" visible="{TNT>/DATAText/3}" />
+                                <Button id="_IDGenButton21" text="T" press="onPress" enabled="{TNT>/6/enabled}" type="{TNT>/2/type}" class="myButtons darkblueButton" visible="{TNT>/DATAText/3}" />
+                                <Button id="_IDGenButton22" text="A" press="onPress" enabled="{TNT>/6/enabled}" type="{TNT>/1/type}" class="myButtons darkblueButton" visible="{TNT>/DATAText/3}" />
+                            </HBox>
+                        </f:GridListItem>
+                    </f:GridList>
+                    <f:GridList id="gridList3" class="mGridList">
+                        <f:GridListItem id="_IDGenGridListItem2">
+                            <SegmentedButton id="SB1" selectionChange="onSelectionChange">
+                                <items>
+                                    <SegmentedButtonItem id="_IDGenSegmentedButtonItem2" text="P2P" icon="sap-icon://group" press="onP2PMod" key="P2P"/>
+                                    <SegmentedButtonItem id="_IDGenSegmentedButtonItem1" text="1P" icon="sap-icon://popup-window" press="on1PMod" key="1P" />
+                                </items>
+                            </SegmentedButton>
+                            <HBox id="_IDGenHBox4">
+                                <VBox id="_IDGenVBox2">
+                                    <Title id="_IDGenTitle2" text="{main>/player1}" class="mTitle3" />
+                                    <Title id="_IDGenTitle3" text="{main>/N} " class="mTitle3 " />
+                                </VBox>
+                                <VBox id="_IDGenVBox3">
+                                    <Title id="_IDGenTitle4" text="Draw" class="mTitle3 " />
+                                    <Title id="_IDGenTitle5" text="{main>/draw}" class="mTitle3" />
+                                </VBox>
+                                <VBox id="_IDGenVBox4">
+                                    <Title id="_IDGenTitle6" text="{main>/player2}" class="mTitle3" />
+                                    <Title id="_IDGenTitle7" text="{main>/T}" class="mTitle3" />
+                                </VBox>
+                            </HBox>
+                            <Button id="_IDGenButton10" text="Сlean the board" press=".onNewGame" />
+                        </f:GridListItem>
+                    </f:GridList>
+                </VBox>
+            </Panel>
+        </f:content>
+    </f:DynamicPage>
+</mvc:View>

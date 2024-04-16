@@ -1,0 +1,59 @@
+/* Enter your custom styles here */
+.myButtons .sapMBtnInner {
+   font-size: 9rem;
+   height: 10rem;
+   -webkit-text-fill-color: #FFFF;
+}
+.myButtons  {
+   min-height: 10rem;
+   min-width: 10rem;
+   margin: 3px;
+}
+.myButtons .sapMBtnContent {
+   line-height: 10rem !important;
+}
+.blueButton .sapMBtnInner{
+   background-color: #6785C1 !important;
+   color: #6785C1 !important;
+}
+.greenButton .sapMBtnInner{
+   background-color: #83B254 !important;
+   color: #83B254 !important;
+}
+.redButton .sapMBtnInner{
+   background-color: #BC4328 !important;
+   color: #BC4328 !important;
+}
+.darkblueButton .sapMBtnInner{
+   background-color: #0F1C50 !important;
+   color: #0F1C50 !important;
+}
+.mGridList{
+   width: 48rem !important;
+   margin: 3px !important;
+   text-align: center;
+   display: inline-flex;
+}
+.mGridList2{
+   width: auto !important;
+   margin: 3px !important;
+   text-align: center;
+   display: inline-flex;
+}
+.mPanelClass{
+   text-align: center;
+}
+.VBoxClass {
+   height: auto;
+}
+.mTitle{
+   width: 48rem !important;
+   font-size: 25px;
+}
+.mTitle2{
+   font-size: 9rem;
+}
+.mTitle3{
+   width: 16rem !important;
+   font-size: 25px;
+}
