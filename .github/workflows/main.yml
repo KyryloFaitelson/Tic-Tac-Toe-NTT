@@ -11,9 +11,7 @@ on:
 
 jobs:
   build:
-  
-    runs-on: my-own-work-pc-runner
-		
+    runs-on: my-own-work-pc-runner	
     steps:
     - name: Checkout
       uses: actions/checkout@v3
