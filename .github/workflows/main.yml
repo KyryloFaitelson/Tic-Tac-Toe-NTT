@@ -5,22 +5,17 @@ name: Fiori App Deploy
 
 
 on:
-    #to trigger when pull request to main branch
   pull_request:
     branches: [ "main" ]
-  #to run manually on the Actions Tab
   workflow_dispatch:
 
 jobs:
   build:
-         #to run on runner that we have just defined, this is the label of a self-hosted runner that is defined in its setting-up process. 
+  
     runs-on: my-own-work-pc-runner
 		
     steps:
-	#to fetch repository local for runner
     - name: Checkout
       uses: actions/checkout@v3
-	#to install packages from the node_modules cache, npm ci installs packages from the package-lock. json file
     - run: npm ci
-	#to deploy app your system
     - run: ECHO 'Y' | npm run deploy
